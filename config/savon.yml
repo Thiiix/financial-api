@@ -1,0 +1,18 @@
+default: &default
+  :log: true
+  :log_level: :debug
+  :pretty_print_xml: true
+  :ssl_verify_mode: :none
+  :raise_errors: true
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  :log: false
+
+production:
+  :ssl_verify_mode: :none
+  :raise_errors: false
+  :pretty_print_xml: true

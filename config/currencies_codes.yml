@@ -1,0 +1,31 @@
+currency_codes:
+  USD:
+    sell: 1
+    buy:  10813
+  EUR:
+    sell: 21619
+    buy:  21620
+  JPY:
+    sell: 21621
+    buy:  21622
+  GBP:
+    sell: 21623
+    buy:  21624
+  CHF:
+    sell: 21625
+    buy:  21626
+  DKK:
+    sell: 21627
+    buy:  21628
+  NOK:
+    sell: 21629
+    buy:  21630
+  SEK:
+    sell: 21631
+    buy:  21632
+  AUD:
+    sell: 21633
+    buy:  21634
+  CAD:
+    sell: 21635
+    buy:  21636
