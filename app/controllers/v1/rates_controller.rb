@@ -1,5 +1,6 @@
 module V1
   class RatesController < ApplicationController
+    caches_action :show, expires_in: 5.minutes
 
     def show
       render json: rates_result
