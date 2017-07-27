@@ -176,7 +176,7 @@ DEPENDENCIES
   savon
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3 (~> 1.3.13)
+  sqlite3 (~> 1.3.12)
   tzinfo-data
 
 BUNDLED WITH
