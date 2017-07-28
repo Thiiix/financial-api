@@ -63,7 +63,7 @@ class Currency
     {
       currency: currency,
       type: type,
-      value: item['VALOR'].to_f,
+      value: item['VALOR'],
       date: item['DATA'].to_time.iso8601
     }
   end
