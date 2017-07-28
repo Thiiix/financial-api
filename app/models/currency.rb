@@ -58,18 +58,18 @@ class Currency
   end
 
   def create_currency_element(type, currency, result)
-    item = item.is_a?(Array) ? result[0]['ITEM'].last : result[0]['ITEM']
+    item = result[0]['ITEM']
+    response = []
 
-    puts "********************************************************************"
-    puts item
-    puts "********************************************************************"
-
-    {
-      currency: currency,
-      type: type,
-      value: item['VALOR'].to_f,
-      date: item['DATA'].to_time.iso8601
-    }
+    item.each do |i|
+      response << {
+        currency: currency,
+        type: type,
+        value: i.dig('VALOR').to_f,
+        date: i.dig('DATA').to_time.iso8601
+      }
+    end
+    response
   end
 
   def get_currency_value(action)
