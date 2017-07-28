@@ -1,6 +1,8 @@
 module V1
   class RatesController < ApplicationController
     def show
+
+      expires_in 3.minutes, :public => true
       render json: rates_result
     end
 
