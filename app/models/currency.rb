@@ -60,10 +60,14 @@ class Currency
   def create_currency_element(type, currency, result)
     item = item.is_a?(Array) ? result[0]['ITEM'].last : result[0]['ITEM']
 
+    puts "********************************************************************"
+    puts item
+    puts "********************************************************************"
+
     {
       currency: currency,
       type: type,
-      value: item['VALOR'],
+      value: item['VALOR'].to_f,
       date: item['DATA'].to_time.iso8601
     }
   end
