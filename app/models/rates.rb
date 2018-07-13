@@ -4,7 +4,7 @@ class Rates
     'd' => 'daily',
     'm' => 'monthly',
     'y' => 'yearly'
-  }
+  }.freeze
 
   def selic
     @selic ||= get_rate_value(4392)
